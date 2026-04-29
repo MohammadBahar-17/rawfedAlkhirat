@@ -24,10 +24,33 @@
                     <input type="text" id="searchInput" placeholder="ابحث عن المنتجات..." class="search-box">
                     <button class="search-btn">🔍</button>
                 </div>
+                <button class="cart-btn" id="cartBtn">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
                 <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
         </div>
     </nav>
+
+    <!-- Shopping Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>سلتك</h3>
+            <button class="cart-close"
+                onclick="document.getElementById('cartPanel').classList.remove('active')">✕</button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-empty" id="cartEmpty">
+                <p>السلة فارغة 🛒</p>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal"></div>
+            <button class="whatsapp-order-btn" onclick="WhatsAppOrder.sendOrder()">
+                📱 أطلب عبر WhatsApp
+            </button>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
@@ -141,6 +164,8 @@
                             </div>
                             <span class="offer-save">توفير 25%</span>
                         </div>
+                        <button class="add-to-cart-btn" data-product-id="1" data-product-name="برتقال حلو"
+                            data-product-price="15">🛒 أضف للسلة</button>
                     </div>
                 </div>
                 <div class="offer-product-card">
@@ -156,6 +181,8 @@
                             </div>
                             <span class="offer-save">توفير 33%</span>
                         </div>
+                        <button class="add-to-cart-btn" data-product-id="8" data-product-name="بروكلي أخضر"
+                            data-product-price="12">🛒 أضف للسلة</button>
                     </div>
                 </div>
                 <div class="offer-product-card">
@@ -171,6 +198,8 @@
                             </div>
                             <span class="offer-save">توفير 25%</span>
                         </div>
+                        <button class="add-to-cart-btn" data-product-id="16" data-product-name="حليب كامل الدسم"
+                            data-product-price="9">🛒 أضف للسلة</button>
                     </div>
                 </div>
             </div>
@@ -194,7 +223,7 @@
                             <div class="contact-icon">📞</div>
                             <div class="contact-details">
                                 <h4>الهاتف</h4>
-                                <p><a href="tel:+972501234567" dir="ltr">+972 50 123 4567</a></p>
+                                <p><a href="tel:+972594454879" dir="ltr">+972 59 445 4879</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -202,7 +231,7 @@
                             <div class="contact-details">
                                 <h4>WhatsApp</h4>
                                 <p>
-                                    <a href="https://wa.me/972501234567?text=مرحبا%20بك%20في%20الريفاف%20للخيرات"
+                                    <a href="https://wa.me/972594454879?text=مرحبا%20بك%20في%20مؤسسة%20روافد%20الخيرات"
                                         target="_blank" class="whatsapp-btn">
                                         اضغط هنا
                                     </a>
