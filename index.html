@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawaafed Al-Khairat - مؤسسة روافد الخيرات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <img src="rawafed.jpg" alt="Rawaafed Al-Khairat Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name">روافد الخيرات مؤسسة</span>
+                        <span class="brand-tagline">Rawaafed</span>
+                    </div>
+                </div>
+                <div class="nav-search">
+                    <input type="text" id="searchInput" placeholder="ابحث عن المنتجات..." class="search-box">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>مرحباً بك في مؤسسة روافد الخيرات</h2>
+            <p>أجود المنتجات بأفضل الأسعار</p>
+            <button class="cta-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                اكتشف منتجاتنا
+            </button>
+        </div>
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>عن مؤسسة روافد الخيرات</h2>
+                    <p>
+                        متجرك الموثوق للحصول على أجود المنتجات الطازة والعضوية. نحن متخصصون في توفير
+                        منتجات عالية الجودة بأسعار منافسة وخدمة عملاء ممتازة.
+                    </p>
+                    <p>
+                        مع أكثر من 10 سنوات من الخبرة، نقدم تشكيلة واسعة من المنتجات الطازة والموثوقة
+                        لعائلتك.
+                    </p>
+                    <ul class="features-list">
+                        <li>✓ منتجات طازة يومياً</li>
+                        <li>✓ أسعار منافسة</li>
+                        <li>✓ خدمة عملاء ممتازة</li>
+                        <li>✓ منتجات عضوية معتمدة</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="logo-showcase">
+                        <img src="rawafed.jpg" alt="Rawaafed Al-Khairat Logo" class="showcase-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>الفئات</h2>
+            <div class="categories-grid">
+                <button class="category-card active" data-category="all">
+                    <span class="category-icon">🏪</span>
+                    <span class="category-name">الكل</span>
+                </button>
+                <button class="category-card" data-category="fruits">
+                    <span class="category-icon">🍎</span>
+                    <span class="category-name">الفواكه</span>
+                </button>
+                <button class="category-card" data-category="vegetables">
+                    <span class="category-icon">🥦</span>
+                    <span class="category-name">الخضروات</span>
+                </button>
+                <button class="category-card" data-category="dairy">
+                    <span class="category-icon">🥛</span>
+                    <span class="category-name">الألبان</span>
+                </button>
+                <button class="category-card" data-category="beverages">
+                    <span class="category-icon">🧃</span>
+                    <span class="category-name">المشروبات</span>
+                </button>
+                <button class="category-card" data-category="household">
+                    <span class="category-icon">🧹</span>
+                    <span class="category-name">منتجات منزلية</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>منتجاتنا</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>لم نجد منتجات مطابقة لبحثك</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offers">
+        <div class="container">
+            <h2>العروض المميزة</h2>
+            <div class="offers-products-grid">
+                <div class="offer-product-card">
+                    <div class="offer-product-image">🍊</div>
+                    <div class="offer-product-info">
+                        <p class="offer-product-category">الفواكه</p>
+                        <h3 class="offer-product-name">برتقال حلو</h3>
+                        <p class="offer-product-description">برتقال طازج وعصيري بجودة عالية</p>
+                        <div class="offer-product-footer">
+                            <div class="offer-prices">
+                                <span class="offer-original-price">20 ₪</span>
+                                <span class="offer-discount-price">15 ₪</span>
+                            </div>
+                            <span class="offer-save">توفير 25%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-product-card">
+                    <div class="offer-product-image">🥦</div>
+                    <div class="offer-product-info">
+                        <p class="offer-product-category">الخضروات</p>
+                        <h3 class="offer-product-name">بروكلي أخضر</h3>
+                        <p class="offer-product-description">بروكلي طازج غني بالفيتامينات والمعادن</p>
+                        <div class="offer-product-footer">
+                            <div class="offer-prices">
+                                <span class="offer-original-price">18 ₪</span>
+                                <span class="offer-discount-price">12 ₪</span>
+                            </div>
+                            <span class="offer-save">توفير 33%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-product-card">
+                    <div class="offer-product-image">🥛</div>
+                    <div class="offer-product-info">
+                        <p class="offer-product-category">الألبان</p>
+                        <h3 class="offer-product-name">حليب كامل الدسم</h3>
+                        <p class="offer-product-description">حليب بقري طازج صحي ومغذي</p>
+                        <div class="offer-product-footer">
+                            <div class="offer-prices">
+                                <span class="offer-original-price">12 ₪</span>
+                                <span class="offer-discount-price">9 ₪</span>
+                            </div>
+                            <span class="offer-save">توفير 25%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.8899999999998!2d35.19!3d31.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15207c7b7b7b7b7d%3A0x7b7b7b7b7b7b7b7b!2sBeit%20Ummar%2C%20Palestine!5e0!3m2!1sar!2sps!4v1234567890"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-info-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>الهاتف</h4>
+                                <p><a href="tel:+972501234567" dir="ltr">+972 50 123 4567</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>
+                                    <a href="https://wa.me/972501234567?text=مرحبا%20بك%20في%20الريفاف%20للخيرات"
+                                        target="_blank" class="whatsapp-btn">
+                                        اضغط هنا
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <h3>📍 موقعنا</h3>
+                        </div>
+                        <div class="location-details">
+                            <p class="location-main">فلسطين - بيت أمر</p>
+                            <p class="location-address">وسط مدينة بيت امر</p>
+                            <div class="location-directions">
+                                <a href="https://maps.google.com/?q=Beit+Ummar+Palestine" target="_blank"
+                                    class="directions-btn">
+                                    🗺️ الاتجاهات
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-header">
+                            <h3>⏰ ساعات العمل</h3>
+                        </div>
+                        <div class="hours-content">
+                            <div class="hours-item">
+                                <span class="day">السبت - الخميس</span>
+                                <span class="time">9:00 ص - 11:00 م</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">الجمعة</span>
+                                <span class="time">3:00 م - 11:00 م</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rawaafed Al-Khairat. جميع الحقوق محفوظة.</p>
+            <p>متجرك الموثوق للمنتجات الطازة والعضوية</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
