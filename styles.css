@@ -1499,10 +1499,14 @@ h2::after {
     }
 
     .whatsapp-order-btn {
-        padding: 0.4rem 0.5rem;
-        font-size: 0.7rem;
-        margin: 0.3rem;
-        width: calc(100% - 0.6rem);
+        padding: 0.6rem;
+        font-size: 0.75rem;
+        margin: 0.4rem;
+        width: calc(100% - 0.8rem);
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
