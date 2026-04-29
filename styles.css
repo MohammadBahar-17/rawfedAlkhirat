@@ -1066,27 +1066,6 @@ h2::after {
     font-size: 1rem;
 }
 
-.location-directions {
-    margin-top: 1.5rem;
-}
-
-.directions-btn {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    color: var(--white) !important;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition);
-    box-shadow: var(--shadow);
-}
-
-.directions-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
-}
-
 .hours-content {
     display: flex;
     flex-direction: column;
