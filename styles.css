@@ -1154,24 +1154,42 @@ h2::after {
     }
 
     .nav-search {
-        flex: 0;
+        flex: 1;
         max-width: none;
-        background: transparent;
-        padding: 0;
-        border: none;
+        gap: 0.5rem;
+        background: var(--light-bg);
+        padding: 0.5rem;
+        border-radius: 25px;
+        border: 2px solid var(--primary-light);
     }
 
     .search-box {
-        display: none;
+        flex: 1;
+        border: none;
+        background: transparent;
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+        outline: none;
     }
 
     .search-btn {
-        padding: 0.5rem;
-        font-size: 1.2rem;
+        background: var(--primary-color);
+        color: var(--white);
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 0;
     }
 
     .menu-toggle {
-        display: flex;
+        display: none;
     }
 
     .hero {
