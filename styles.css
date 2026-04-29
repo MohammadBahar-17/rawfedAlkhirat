@@ -1466,7 +1466,7 @@ h2::after {
     }
 
     .cart-content {
-        max-height: calc(100vh - 200px);
+        max-height: calc(100vh - 110px);
     }
 
     .cart-item {
