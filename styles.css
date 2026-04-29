@@ -1154,7 +1154,20 @@ h2::after {
     }
 
     .nav-search {
+        flex: 0;
+        max-width: none;
+        background: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .search-box {
         display: none;
+    }
+
+    .search-btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .menu-toggle {
