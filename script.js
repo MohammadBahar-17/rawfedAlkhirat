@@ -917,12 +917,6 @@ createProductCard = function (product) {
         this.style.transform = 'translateY(0)';
     });
 
-    // Add to cart button handler
-    const addBtn = card.querySelector('.add-to-cart-btn');
-    if (addBtn) {
-        setupAddToCartButton(addBtn);
-    }
-
     return card;
 };
 
