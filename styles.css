@@ -1361,6 +1361,9 @@ h2::after {
     font-size: 1.1rem;
     border-radius: 8px;
     flex-shrink: 0;
+    position: sticky;
+    bottom: 80px;
+    z-index: 10;
 }
 
 /* WhatsApp Order Button */
@@ -1373,6 +1376,9 @@ h2::after {
     font-size: 0.95rem;
     font-weight: 700;
     cursor: pointer;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
     transition: var(--transition);
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     flex-shrink: 0;
@@ -1483,12 +1489,18 @@ h2::after {
     }
 
     .cart-total {
+        position: sticky;
+        bottom: 50px;
+        z-index: 10;
         font-size: 0.9rem;
         padding: 0.6rem;
         border-top: 1px solid var(--border-color);
     }
 
     .whatsapp-order-btn {
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
         padding: 0.6rem;
         font-size: 0.75rem;
         min-height: 36px;
