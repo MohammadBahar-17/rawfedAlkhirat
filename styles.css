@@ -1261,7 +1261,6 @@ h2::after {
 
 /* Cart Items Container */
 #cartItems {
-    flex: 1;
     overflow-y: auto;
 }
 
@@ -1466,7 +1465,7 @@ h2::after {
     }
 
     .cart-content {
-        max-height: calc(100vh - 155px);
+        max-height: calc(100vh - 200px);
     }
 
     .cart-item {
