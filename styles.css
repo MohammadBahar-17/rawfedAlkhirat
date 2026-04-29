@@ -1463,8 +1463,8 @@ h2::after {
     }
 
     .cart-panel {
-        width: 100%;
-        right: -100%;
+        width: 60%;
+        right: -60%;
     }
 
     .cart-header {
