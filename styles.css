@@ -1192,7 +1192,7 @@ h2::after {
     top: 0;
     right: -400px;
     width: 400px;
-    height: 100vh;
+    height: 80vh;
     background: var(--white);
     box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15);
     z-index: 999;
