@@ -956,6 +956,7 @@ h2::after {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-width: 0;
 }
 
 .contact-map {
@@ -964,12 +965,14 @@ h2::after {
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     height: 350px;
+    display: block;
 }
 
 .contact-map iframe {
     width: 100%;
     height: 100%;
     border: none;
+    display: block;
 }
 
 .contact-info-grid {
@@ -1275,6 +1278,20 @@ h2::after {
 
     .contact-map {
         height: 300px;
+        width: 100%;
+    }
+
+    .contact-map iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-left {
+        min-width: 0;
+    }
+
+    .contact-right {
+        min-width: 0;
     }
 
     .contact-info-grid {
@@ -1435,8 +1452,19 @@ h2::after {
         font-size: 1.5rem;
     }
 
+    .contact-left {
+        gap: 1.5rem;
+        min-width: 0;
+    }
+
     .contact-map {
-        height: 250px;
+        height: 280px;
+        width: 100%;
+    }
+
+    .contact-map iframe {
+        width: 100%;
+        height: 100%;
     }
 
     .contact-left {
@@ -1445,6 +1473,7 @@ h2::after {
 
     .contact-right {
         gap: 1.5rem;
+        min-width: 0;
     }
 
     .location-card,
