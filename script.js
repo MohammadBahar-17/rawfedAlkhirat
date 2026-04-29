@@ -708,6 +708,7 @@ const CartUI = (() => {
             if (cartPanel) {
                 cartPanel.classList.add('active');
                 isOpen = true;
+                document.body.style.overflow = 'hidden';
                 this.renderCart();
             }
         },
@@ -720,6 +721,7 @@ const CartUI = (() => {
             if (cartPanel) {
                 cartPanel.classList.remove('active');
                 isOpen = false;
+                document.body.style.overflow = 'auto';
             }
         },
 
